@@ -17,6 +17,8 @@ public class DriverGetMethod {
         System.out.println("<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>");
         System.out.println(driver.getPageSource()); //Arka planda çalışan sayfa kodlarını yazdırır
         System.out.println("<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>");
+        System.out.println(driver.getWindowHandle()); //içinde olduğu sayfanın UNIQuE hash kodunu döndürür
+        System.out.println(driver.getWindowHandles());//driver çalışırken acılan tüm sayfanın UNIQUE hash kodunu döndürür
 
     }
 }
