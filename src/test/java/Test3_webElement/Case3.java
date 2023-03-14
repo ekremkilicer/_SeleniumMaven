@@ -22,7 +22,7 @@ public class Case3 {
         //3-sayfada kaç adet buton bulunduğunu yazdırın
         List<WebElement> buttonListesi=driver.findElements(By.tagName("button")); // bütün butonları liste olarak getirir elements olmasına dikkat et
         System.out.println(buttonListesi.size());
-        //4-sayfadaki herbir buton üzerindeki yazıları yazdırın
+        //4-sayfadaki herbir buton üzerindeki yazıları yazdırın foreah methoduyla yapılır.
         for (WebElement each :buttonListesi
              ) {
             System.out.println(each.getText());
