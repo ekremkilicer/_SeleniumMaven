@@ -12,8 +12,8 @@ public class DriverManageMethod {
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().window().maximize();//pencereyi tam sayfa yapar
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));//15 saniye bekletir
        //1A-driver.manage().window().getSize() //içinde olduğu sayfanın pixel olarak ölçülerini döndürür
         System.out.println(driver.manage().window().getSize());//(1050,708)pixel
         System.out.println(driver.manage().window().getSize().height); //708 i verir sadece yükseklik
