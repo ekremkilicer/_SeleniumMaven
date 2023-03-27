@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="_SeleniumMaven" />
+        <module name="com.YoutubeSelenium" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="_SeleniumMaven" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
